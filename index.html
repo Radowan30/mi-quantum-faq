@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mi-Quantum IDE</title>
+<title>Mi-Quasar IDE</title>
 <style>
   :root{
     /* light palette (complete, on bare :root) */
@@ -198,7 +198,7 @@
           <ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(120 24 24)"/>
         </g>
       </svg>
-      <b><span class="mi">Mi</span>-Quantum IDE</b>
+      <b><span class="mi">Mi</span>-Quasar IDE</b>
     </span>
     <nav class="nav">
       <a href="#platform">Platform</a>
@@ -216,7 +216,7 @@
   <div class="wrap">
     <span class="eyebrow">Frequently asked questions · Booth guide</span>
     <h1>The quantum workspace with an AI that does <span class="grad">the hard parts</span>.</h1>
-    <p class="lede">Mi-Quantum IDE puts an AI research partner, a certify-before-solve quantum optimizer, and a quantum synthetic-data engine in one place — so researchers, businesses, and the simply curious can put quantum to work without a PhD in it.</p>
+    <p class="lede">Mi-Quasar IDE puts an AI research partner, a quantum optimizer that checks its model before it solves, and a quantum synthetic-data engine in one place — so researchers, businesses, and the simply curious can put quantum to work without a PhD in it.</p>
     <div class="stat-hook">
       <b>$43&ndash;71B</b>
       <span>projected quantum-computing market by 2035 &mdash; McKinsey, <span style="white-space:nowrap">Quantum Technology Monitor 2026</span></span>
@@ -229,7 +229,7 @@
 <section id="platform">
   <div class="wrap">
     <span class="eyebrow">The platform</span>
-    <h2>What is Mi-Quantum IDE?</h2>
+    <h2>What is Mi-Quasar IDE?</h2>
     <p class="lead">It is a complete workspace for quantum computing built on the same kind of professional code editor developers already trust — but with an AI assistant woven through it and two powerful quantum engines built in. You can talk to it in plain English, and it explains, plans, draws, models, and computes for you.</p>
 
     <div class="pillars">
@@ -243,13 +243,13 @@
         <span class="k">02 · Decide &amp; optimize</span>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7l3 9M16 7l-3 9M8.5 6h7"/></svg></div>
         <h3>Quantum Optimizer</h3>
-        <p>Turn real scheduling, routing and selection problems into quantum-ready form &mdash; and <em>prove</em> the maths is right before anything is solved.</p>
+        <p>Turn real scheduling, routing and selection problems into a QUBO, check the model before any solver runs, and compare every answer with classical methods.</p>
       </div>
       <div class="pillar" style="--accent:var(--violet-2)">
-        <span class="k">03 · Generate &amp; protect</span>
+        <span class="k">03 · Generate &amp; validate</span>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
         <h3>Synthetic Data Engine</h3>
-        <p>Create realistic, private "look-alike" data when the real thing is scarce, sensitive, or imbalanced &mdash; using quantum generative models.</p>
+        <p>Create realistic "look-alike" data when the real thing is scarce, sensitive, or imbalanced &mdash; using quantum generative models, with quality and privacy risk measured on every run.</p>
       </div>
     </div>
   </div>
@@ -288,7 +288,7 @@
     <div class="faqgroup">
       <details class="qa" open><summary><span class="qm">Q.</span><span class="tw">What can the AI assistant actually do?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Think of it as a quantum expert sitting next to you. It can <strong>explain concepts</strong> at any level, <strong>plan your work</strong> as a step-by-step flowchart, <strong>write and check code</strong>, and <strong>draw live visuals</strong> right inside the conversation. Because it's built into a full IDE, it can also read your files and run the platform's quantum engines on your behalf.</p>
+          <p>Think of it as a quantum expert sitting next to you. It can <strong>explain concepts</strong> at any level, <strong>plan your work</strong> as a step-by-step flowchart, <strong>write code</strong>, and <strong>draw live visuals</strong> right inside the conversation. Because it's built into a full IDE, it can also read your files and run the platform's quantum engines on your behalf.</p>
         </div>
       </details>
 
@@ -314,7 +314,7 @@
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">What are "Agentic" and "Dev" modes?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Two ways to work, one click apart. <strong>Agentic mode</strong> is a clean, full-screen chat experience &mdash; familiar to anyone who's used an AI assistant &mdash; for an AI-first workflow. <strong>Dev mode</strong> is a full professional IDE with file explorer, editors and tools, for hands-on development. The optimizer and synthetic-data engine are reachable from both.</p>
+          <p>Two ways to work, one click apart. <strong>Agentic mode</strong> is a clean, full-screen chat experience &mdash; familiar to anyone who's used an AI assistant &mdash; for an AI-first workflow. <strong>Dev mode</strong> is a full professional IDE with file explorer, editors and tools, for hands-on development. The Optimizer and Synthetic-data dashboards open as tabs in both modes.</p>
         </div>
       </details>
 
@@ -326,36 +326,54 @@
   <div class="wrap">
     <div class="sechead"><span class="eyebrow">Capability 02</span></div>
     <h2>The Quantum Optimizer</h2>
-    <p class="lead">Many real business problems are "optimization" problems &mdash; pick the best combination out of astronomically many. The optimizer turns those into quantum-ready form and, crucially, <strong>proves the maths matches your problem before it solves anything</strong>.</p>
+    <p class="lead">Many real business problems are "optimization" problems &mdash; pick the best combination out of astronomically many. The optimizer turns those into a <strong>QUBO</strong> &mdash; the form quantum and quantum-inspired solvers work on &mdash; <strong>checks the compiled model before any solver runs</strong>, and compares every answer with classical methods.</p>
 
     <div class="faqgroup">
       <details class="qa" open><summary><span class="qm">Q.</span><span class="tw">What kinds of problems does it solve?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Everyday decisions that get impossibly complex at scale: <strong>scheduling</strong> shifts or jobs, <strong>routing</strong> and sequencing deliveries, <strong>selecting</strong> the best set of items within a budget, and <strong>partitioning</strong> a network. A 15-row spreadsheet can already hide billions of possible answers &mdash; too many to check by hand.</p>
+          <p>Everyday decisions that get impossibly complex at scale. Five ready-made templates cover the common ones:</p>
+          <p><span class="chip">Shortest delivery route</span><span class="chip">Load selection</span><span class="chip">Network partition</span><span class="chip">Portfolio selection</span><span class="chip">Task-to-slot scheduling</span></p>
+          <p>For anything else, a <strong>model builder</strong> lets you define your own variables, objective and constraints. Even a 15-stop delivery route has over 43 billion possible orders &mdash; too many to check by hand.</p>
         </div>
       </details>
 
-      <details class="qa"><summary><span class="qm">Q.</span><span class="tw">What does "certify before you solve" mean, and why should I care?</span><span class="chev">›</span></summary>
+      <details class="qa"><summary><span class="qm">Q.</span><span class="tw">How does it make sure an answer can be trusted?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>When a problem is translated into maths for a quantum solver, a small, invisible mistake can return a <strong>confident but wrong answer</strong> &mdash; and there's usually nothing to check it against. This optimizer runs an independent <strong>verification gate</strong> first: if the translated maths doesn't provably match the problem you described, <strong>no solver runs</strong> and it tells you exactly why. Its one promise: <em>"the problem you solve is the problem you described."</em></p>
+          <p>When a problem is translated into maths for a solver, a small, invisible mistake can return a <strong>confident but wrong answer</strong>. The optimizer checks at three points:</p>
+          <ul>
+            <li><strong>Before modelling</strong> &mdash; with the language model switched on, AI checks your one-sentence goal against your data, and asks "Solve anyway?" if they disagree.</li>
+            <li><strong>Before solving</strong> &mdash; the model is compiled into a QUBO and checked first: every constraint is enforced with a proven penalty weight, and nothing is run until then.</li>
+            <li><strong>After solving</strong> &mdash; every answer is compared with a classical baseline and an exact classical reference. The result says which method produced it, shows a certificate such as "Optimal (proven)" when optimality is proven, and checks every constraint against your own numbers.</li>
+          </ul>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Do I need to be a quantum expert to use it?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>No. You describe your problem in plain terms and upload your data; the platform does the quantum modelling. A human still approves the key steps (so nothing runs behind your back), but you never have to write the underlying maths yourself.</p>
+          <p>No. You write one sentence describing your goal &mdash; in English or Bahasa Melayu &mdash; and add your data, starting from a template or the model builder. The platform does the quantum modelling and writes the model out as an equation you can inspect, so you never have to write the underlying maths yourself.</p>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Can I just ask the AI assistant to run it?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Yes. The optimizer is wired into the AI chat, so you can drive the whole flow &mdash; formulate, certify, solve, report &mdash; by conversation, or open its own dashboard and work hands-on. Same engine, your choice of interface.</p>
+          <p>Yes. The optimizer is connected to the AI chat through nine tools, so you can upload data, formulate and check a model, submit a solve and read the result by conversation &mdash; or open its dashboard as a tab in the IDE and work hands-on. Same engine, your choice of interface.</p>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Does it over-promise on "quantum"?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Deliberately not. Every run also tries ordinary <strong>classical methods</strong> as a baseline, and the report says <em>"the classical method won"</em> first when that's the honest result. It's built to earn trust in a hype-heavy field, not to inflate it.</p>
+          <p>Deliberately not. It runs classical and quantum-inspired solvers, and QAOA &mdash; a quantum algorithm &mdash; on a classical simulator: <strong>no quantum hardware is used and no speedup is claimed</strong>. Every job is compared with <strong>classical methods</strong>, and if one beats the solver's own answer you get the better answer, with the result saying which method produced it. It's built to earn trust in a hype-heavy field, not to inflate it.</p>
+        </div>
+      </details>
+
+      <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Which solvers can it use?</span><span class="chev">›</span></summary>
+        <div class="a">
+          <p>Seven, and an automatic mode picks one for you:</p>
+          <ul>
+            <li><strong>Classical</strong> &mdash; exact enumeration (small problems), simulated annealing and tabu search on the CPU, and parallel tempering on the GPU.</li>
+            <li><strong>Quantum-inspired</strong> &mdash; simulated bifurcation and simulated quantum annealing on the GPU.</li>
+            <li><strong>Quantum algorithm</strong> &mdash; QAOA, run on a simulator.</li>
+          </ul>
         </div>
       </details>
     </div>
@@ -366,36 +384,36 @@
   <div class="wrap">
     <div class="sechead"><span class="eyebrow">Capability 03</span></div>
     <h2>The Synthetic Data Engine</h2>
-    <p class="lead">Good data is often private, scarce, or lopsided. This engine creates realistic <strong>artificial</strong> data that keeps the patterns of the real thing but contains none of the real records &mdash; using quantum generative models, scored honestly.</p>
+    <p class="lead">Good data is often sensitive, scarce, or lopsided. This engine creates realistic <strong>artificial</strong> data that follows the patterns of the real thing &mdash; using quantum generative models, with its quality and privacy risk measured on every run.</p>
 
     <div class="faqgroup">
       <details class="qa" open><summary><span class="qm">Q.</span><span class="tw">What is synthetic data, and why would I want it?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>It's data that <strong>looks and behaves like your real data but isn't</strong>. That lets you share it, test on it, and train models with it when the real data is <strong>private</strong> (patient or customer records), <strong>scarce</strong> (not enough examples), or <strong>imbalanced</strong> (fraud and rare faults are rare by definition).</p>
+          <p>It's data that <strong>looks and behaves like your real data but isn't</strong>. That lets you test on it and train models with it when the real data is <strong>sensitive</strong> (patient or customer records), <strong>scarce</strong> (not enough examples), or <strong>imbalanced</strong> (fraud and rare faults are rare by definition). Every run also <strong>measures privacy risk</strong> &mdash; how close the synthetic rows sit to real ones, and a membership-inference test &mdash; so you can judge it before you share it.</p>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">What can it do?</span><span class="chev">›</span></summary>
         <div class="a">
           <ul>
-            <li><strong>Generate</strong> a realistic look-alike of any spreadsheet you upload.</li>
-            <li><strong>Rebalance</strong> rare cases &mdash; e.g. boost a rare attack or disease class up to parity.</li>
-            <li><strong>Build whole multi-table databases</strong> while preserving the relationships between tables.</li>
-            <li><strong>Find a dataset for you</strong> from public sources if you have none yet.</li>
+            <li><strong>Generate</strong> a realistic look-alike of a table you upload (CSV, Excel, Parquet or JSON), after profiling its quality.</li>
+            <li><strong>Rebalance</strong> rare cases &mdash; a "Balanced" option oversamples rare classes, such as a rare attack or disease.</li>
+            <li><strong>Synthesise related tables together</strong> &mdash; it detects the keys between them and checks referential integrity.</li>
+            <li><strong>Find a dataset for you</strong> on Hugging Face, data.gov.my or UCI if you have none yet, with its licence recorded.</li>
           </ul>
-          <p>And it <strong>picks the best method automatically</strong> by running a tournament of quantum and classical generators and keeping the winner &mdash; then tells you when a result is <strong>within the margin of error</strong>, so you can trust a genuine improvement before it goes into a report or paper.</p>
+          <p>And it <strong>picks the best method automatically</strong> by running a tournament of up to 13 engines &mdash; 4 quantum families against 9 classical baselines &mdash; and keeping the winner on multi-seed scores, with paired t-tests against the runner-up. Each run is scored for fidelity, detector and SDMetrics quality (plus utility when you pick a target column), and a difference that is only noise is labelled <strong>"within noise"</strong>, so you can trust a genuine improvement before it goes into a report or paper.</p>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">What is actually "quantum" about it?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>The generative core uses genuine <strong>quantum and hybrid models</strong> (quantum circuit-based generators running on a GPU). They only "win" if they beat strong classical methods on <em>your</em> data &mdash; and you can even watch the platform <strong>evolve the quantum circuit</strong> to fit your dataset, and see the actual circuit drawn on screen.</p>
+          <p>The generative core has <strong>four quantum model families</strong> &mdash; QCBM, QGAN, QVAE and QRBM &mdash; built on quantum circuits simulated on a GPU (no quantum hardware). They only "win" if they beat strong classical methods on <em>your</em> data, and the dashboard shows it plainly when a classical engine wins. You can also let the platform <strong>evolve the quantum circuit</strong> design for your dataset, and see the circuit behind a quantum run drawn on screen.</p>
         </div>
       </details>
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Can I drive it by chatting with the AI too?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Yes &mdash; like the optimizer, it's connected to the AI assistant. Ask for synthetic data in plain English, or open its dashboard and click through it yourself. No extra AI key or subscription is needed to operate it.</p>
+          <p>Yes &mdash; like the optimizer, it's connected to the AI assistant through 13 tools, so you can find, profile and generate data in plain English &mdash; or open its dashboard as a tab in the IDE and click through it yourself. Its own optional AI helper runs on a local model on the same GPU server.</p>
         </div>
       </details>
     </div>
@@ -406,7 +424,7 @@
   <div class="wrap">
     <span class="eyebrow">The opportunity</span>
     <h2>A market arriving now</h2>
-    <p class="lead">Quantum is crossing from research into commercial reality &mdash; and the people who will use it first are exactly the researchers, businesses and learners Mi-Quantum IDE is built for.</p>
+    <p class="lead">Quantum is crossing from research into commercial reality &mdash; and the people who will use it first are exactly the researchers, businesses and learners Mi-Quasar IDE is built for.</p>
 
     <div class="market">
       <div class="row">
@@ -415,7 +433,7 @@
           <div class="cap">projected size of the <strong>quantum-computing</strong> market by 2035, within a total quantum-technology market approaching <strong>$100&nbsp;billion</strong>.</div>
         </div>
         <ul>
-          <li><b>2035</b><span>Quantum computing: <strong>$43&ndash;71B</strong> &mdash; the segment Mi-Quantum IDE serves.</span></li>
+          <li><b>2035</b><span>Quantum computing: <strong>$43&ndash;71B</strong> &mdash; the segment Mi-Quasar IDE serves.</span></li>
           <li><b>~$100B</b><span>Total quantum technology (computing, communication, sensing) by 2035.</span></li>
           <li><b>Now</b><span>Investment and revenue are accelerating &mdash; McKinsey calls it a "commercial tipping point."</span></li>
         </ul>
@@ -423,7 +441,7 @@
     </div>
 
     <div class="faqgroup">
-      <details class="qa" open><summary><span class="qm">Q.</span><span class="tw">How is Mi-Quantum IDE offered as a product?</span><span class="chev">›</span></summary>
+      <details class="qa" open><summary><span class="qm">Q.</span><span class="tw">How is Mi-Quasar IDE offered as a product?</span><span class="chev">›</span></summary>
         <div class="a">
           <p>It is planned to be offered as a <strong>subscription platform with free and paid tiers</strong>.</p>
         </div>
@@ -431,7 +449,7 @@
 
       <details class="qa"><summary><span class="qm">Q.</span><span class="tw">Why is there a market for this now?</span><span class="chev">›</span></summary>
         <div class="a">
-          <p>Two gaps are widening at once: quantum is becoming commercially real, and the <strong>talent to use it is scarce and expensive</strong>. Mi-Quantum IDE closes that gap &mdash; it lets non-specialists do meaningful quantum work through an AI that plans, explains and computes &mdash; so organisations can explore quantum <strong>years before</strong> they could hire a team to.</p>
+          <p>Two gaps are widening at once: quantum is becoming commercially real, and the <strong>talent to use it is scarce and expensive</strong>. Mi-Quasar IDE closes that gap &mdash; it lets non-specialists do meaningful quantum work through an AI that plans, explains and computes &mdash; so organisations can explore quantum <strong>years before</strong> they could hire a team to.</p>
         </div>
       </details>
 
@@ -459,7 +477,7 @@
           <ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(120 24 24)"/>
         </g>
       </svg>
-      <b><span class="mi">Mi</span>-Quantum IDE</b>
+      <b><span class="mi">Mi</span>-Quasar IDE</b>
     </span>
     <span style="color:var(--faint); font-family:var(--font-mono); font-size:12px">Quantum, made usable.</span>
   </div>
